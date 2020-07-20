@@ -11,8 +11,12 @@ const Pagination = () => {
   return (
     <nav aria-label="Page navigation example">
       <ul className="pagination">
-        <li className={cn("page-item", { disabled: previous === null })}>
+        <li
+          data-testid="prev-link"
+          className={cn("page-item", { disabled: previous === null })}
+        >
           <button
+            data-testid="prev-button"
             type="button"
             className="page-link"
             onClick={() => {
@@ -24,6 +28,7 @@ const Pagination = () => {
         </li>
         <li className={cn("page-item", { disabled: next === null })}>
           <button
+            data-testid="next-button"
             type="button"
             className="page-link"
             onClick={() => {
