@@ -1,0 +1,15 @@
+.list-wrapper{
+  height: 491px;
+  overflow: auto;
+  margin-bottom: 1rem;
+  overscroll-behavior: contain;
+}
+
+.pokemon-card{
+  width:100%;
+  max-width:20rem;
+}
+
+.main{
+  margin-top: 2rem;
+}
